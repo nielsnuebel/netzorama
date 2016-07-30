@@ -1,7 +1,11 @@
 <div class="quotes">
-    <ul>
-        {% for item in site.quotes %}
-        <li class="font-{{ item.size }}">{{ item.text }}</li>
-        {% endfor %}
-    </ul>
+    <div class="prev"></div>
+    <div class="quotes-wrapper">
+        <ul>
+            {% for item in site.quotes %}
+            <li class="font-{{ item.size }}">{{ item.text }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="next"></div>
 </div>

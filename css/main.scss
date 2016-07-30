@@ -98,8 +98,18 @@ body {
     font-family: 'EamesCMExtraBold';
     font-size: 78px;
 
-    ul {
-      list-style: none;
+    .quotes-wrapper {
+      margin: 0 auto;
+      width: 860px;
+
+      ul {
+        list-style: none;
+
+        li {
+          display: inline;
+          border-bottom: 5px solid black;
+        }
+      }
     }
   }
 
