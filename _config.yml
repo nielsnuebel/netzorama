@@ -21,11 +21,9 @@ googleanalyticss:  UA-XXXXX-1
 # Build settings
 markdown: kramdown
 
-include:
-  - .nojekyll
 
 #Exclude Files or Folder
-exclude: [node_modules, gulpfile.js, package.json, bower_components, bower.json, Gemfile, Gemfile.lock]
+exclude: [node_modules, gulpfile.js, package.json, bower_components, bower.json, Gemfile, Gemfile.lock, README.md]
 sass:
   sass_dir: _sass
   style: compressed
