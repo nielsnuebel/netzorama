@@ -1,0 +1,7 @@
+<div class="quotes">
+    <ul>
+        {% for item in site.quotes %}
+        <li class="font-{{ item.size }}">{{ item.text }}</li>
+        {% endfor %}
+    </ul>
+</div>

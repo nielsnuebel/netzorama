@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="stripe"></div>
+  <div class="wrapper">
+    {% assign links = site.nav | where: "name", "Home" %}
+    {% for link in links %}
+    <a class="comedycentral" href="{{ link.link }}"><img src="{{ site.baseurl }}/assets/images/comedycentral.png" alt="comedycentral"/></a>
+    {% endfor %}
+
+    <div class="netz-o-rama">
+      <p><img src="{{ site.baseurl }}/assets/images/netz-o-rama.png" alt="NETZ-O-RAMA"/><br>Ab 28. August</p>
+    </div>
+  </div>
+</header>
