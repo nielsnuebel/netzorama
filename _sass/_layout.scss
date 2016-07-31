@@ -23,34 +23,66 @@ body {
   padding-left: 0px;
   position: relative;
   overflow: hidden;
+  @media screen and (min-width: 730px) {
+    min-height: 700px;
+  }
 
   header {
-    padding-top: 39px;
+    @media screen and (min-width: 730px) {
+      padding-top: 39px;
+    }
     position: relative;
 
 
     .stripe {
       position: absolute;
-      top: 48px;
+      top: 100px;
       background: #80c419;
       width: 100%;
       height: 34px;
       z-index: -1;
+      @media screen and (min-width: 730px) {
+        top: 48px;
+      }
     }
 
     .wrapper {
       position: relative;
       z-index: 2;
       margin: 0 auto;
-      max-width: 1064px;
+      max-width: 1200px;
+      @media screen and (min-width: 730px) {
+        padding: 0 15px;
+        .comedywrapper {
+          display: inline;
+        }
+      }
+
+      @media screen and (max-width: 729px) {
+        .comedywrapper {
+          background: #80c419;
+          position: relative;
+          padding: 10px 15px 4px;
+          text-align: center;
+        }
+      }
+      a.comedycentral {
+        width: 269px;
+        height: 53px;
+      }
+
 
       .netz-o-rama {
-        float: right;
         text-align: center;
         text-transform: uppercase;
         font-size: 22px;
         font-weight: bold;
-        margin-top: 6px;
+        margin-top: 24px;
+
+        @media screen and (min-width: 730px) {
+          float: right;
+          margin-top: 6px;
+        }
 
         p {
           padding: 0;
@@ -60,9 +92,25 @@ body {
     }
   }
   .actor {
-    position: absolute;
-    top: 48px;
-    right: -81px;
-    z-index: -1;
+    img {
+      max-width: 100%;
+      display: inline-block;
+    }
+    @media screen and (min-width: 200px) and (max-width: 729px) {
+      text-align: center;
+      img {
+        max-height: 400px;
+      }
+    }
+    @media screen and (min-width: 730px) {
+      position: absolute;
+      top: 123px;
+      right: -161px;
+      z-index: -1;
+
+      img {
+        max-height: 573px;
+      }
+    }
   }
 }

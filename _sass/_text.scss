@@ -3,14 +3,18 @@
   margin: 50px auto;
   text-align: center;
 
-  button {
-    background: url(../assets/images/Button.png);
+  a {
+    background: url(../assets/images/Button.png) no-repeat;
     width: 192px;
     height: 53px;
     border: none;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
 
     &:focus {outline:0;}
   }
@@ -19,9 +23,18 @@
     display: none;
     margin-top: 20px;
     text-align: left;
+    padding: 0 15px;
 
     &.open {
       display: block;
+    }
+  }
+
+  @media screen and (max-width: 729px) {
+    margin-top: -120px;
+
+    .text_wrapper {
+      margin-top: 40px;
     }
   }
 }

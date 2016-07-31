@@ -1,5 +1,20 @@
 .quotes {
-  margin: 120px auto 0;
+  margin: 30px auto 0;
+  max-width: 90%;
+
+  .quotes-wrapper {
+    max-width: 80%;
+  }
+
+  @media screen and (min-width: 730px) {
+    margin: 120px auto 0;
+  }
+  @media screen and (min-width: 730px) and (max-width: 1009px) {
+    max-width: 50%;
+    .quotes-wrapper {
+      max-width: 80%;
+    }
+  }
 
   @media screen and (min-width: 1010px) and (max-width: 1769px) {
     max-width: 70%;
