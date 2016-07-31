@@ -3,9 +3,8 @@
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Your awesome title2</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>NETZ-O-RAMA</title>
+  <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/main.css">
@@ -68,7 +67,7 @@
     <div class="quotes-wrapper">
         <ul id="owl-demo" class="owl-carousel owl-theme">
             
-            <li class="item font-5">FAIL IN LOVE <br>WITH MASUD.</li>
+            <li class="item font-5">FAIL IN LOVE WITH MASUD.</li>
             
             <li class="item font-4">TIERPFLEGER FÜR ALLE, DIE SICH IM INTERNET ZUM AFFEN MACHEN.</li>
             
@@ -120,6 +119,27 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/owl.carousel.min.js"></script>
 <script src="/assets/js/custom.js"></script>
+
+<!-- Campaign Omniture Tracking -->
+<script src="/assets/js/AppMeasurement.js"></script>
+<script>
+    s = new AppMeasurement() // Site dependent info: need to be done only once per site(country)
+    s.account = "viacomedyde" // The account should be custom for each omniture suite that we want to track to.
+    s.charSet = "UTF-8"
+    s.currencyCode = ""
+    // Etc..
+
+    // Specific page tracking  (e.g a to sent each page) (you can extend the object params)
+    s.pageName    = "Netz-o-rama"
+    s.pageType    = ""
+    s.server      = ""
+    s.channel     = ""
+    s.referrer    = ""
+    s.hier1       = "site/campaign/netzorama"
+    s.campaign    = "netzorama"
+
+    s.t();
+</script>
 
 
         <!-- Google Analytics: change UA-XXXXX-1 to be your site's ID. -->
