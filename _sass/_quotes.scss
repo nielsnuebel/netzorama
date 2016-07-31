@@ -1,13 +1,19 @@
 .quotes {
   margin: 30px auto 0;
-  max-width: 90%;
+  max-width: 95%;
 
   .quotes-wrapper {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   @media screen and (min-width: 730px) {
     margin: 120px auto 0;
+  }
+  @media screen and (min-width: 675px) and (max-width: 729px) {
+    max-width: 90%;
+    .quotes-wrapper {
+      max-width: 80%;
+    }
   }
   @media screen and (min-width: 730px) and (max-width: 1009px) {
     max-width: 50%;
@@ -41,7 +47,10 @@
 
       li {
         display: inline;
-        border-bottom: 5px solid black;
+        border-bottom: 2px solid black;
+        @media screen and (min-width: 730px) {
+          border-bottom: 4px solid black;
+        }
 
         &.font-6 {
           font-size: 6vw;

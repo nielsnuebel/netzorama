@@ -10,101 +10,100 @@
 
 /* Styling Next and Prev buttons */
 
-.owl-theme .owl-controls .owl-buttons div{
-	position: absolute;
-	width: 50px;
-	height: 74px;
-	top: 50%;
-	margin-top: -37px;
-	background-image:    url(../assets/images/pfeil.png);
-	background-size:     cover;
-	background-repeat:   no-repeat;
-	background-position: center center;
-
-	&.owl-prev {
-		transform: rotateZ(-180deg);
-		left: -90px;
+.owl-theme .owl-controls .owl-buttons
+{
+	@media screen and (max-width: 674px) {
+		position: relative;
+		display: block;
+		width: 100%;
+		text-align: justify;
 	}
-	&.owl-next {
-		right: -90px;
-	}
-
-	@media screen and (max-width: 400px) {
-		width: 28px;
-		height: 40px;
-		margin-top: -20px;
+	div{
+		position: absolute;
+		width: 50px;
+		height: 74px;
+		top: 50%;
+		margin-top: -37px;
+		background-image:    url(../assets/images/pfeil.png);
+		background-size:     cover;
+		background-repeat:   no-repeat;
+		background-position: center center;
 
 		&.owl-prev {
-			left: -30px;
+			transform: rotateZ(-180deg);
+			left: -90px;
 		}
 		&.owl-next {
-			right: -30px;
+			right: -90px;
+		}
+
+
+		@media screen and (max-width: 674px){
+			position: relative;
+			width: 28px;
+			height: 40px;
+			margin-top: 0px;
+			display: inline-block;
+			&.owl-prev {
+				left: 0px;
+			}
+			&.owl-next {
+				right: 0px;
+				float: right;
+			}
 		}
 	}
-	@media screen and (min-width: 400px) and (max-width: 674px){
-		width: 34px;
-		height: 50px;
-		margin-top: -25px;
 
-		&.owl-prev {
-			left: -40px;
-		}
-		&.owl-next {
-			right: -40px;
-		}
+	/* Clickable class fix problem with hover on touch devices */
+	/* Use it for non-touch hover action */
+	.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+		filter: Alpha(Opacity=100);/*IE7 fix*/
+		opacity: 1;
+		text-decoration: none;
 	}
-}
 
+	/* Styling Pagination*/
 
-/* Clickable class fix problem with hover on touch devices */
-/* Use it for non-touch hover action */
-.owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-	text-decoration: none;
-}
+	.owl-theme .owl-controls .owl-page{
+		display: inline-block;
+		zoom: 1;
+		*display: inline;/*IE7 life-saver */
+	}
+	.owl-theme .owl-controls .owl-page span{
+		display: block;
+		width: 12px;
+		height: 12px;
+		margin: 5px 7px;
+		filter: Alpha(Opacity=50);/*IE7 fix*/
+		opacity: 0.5;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		background: #869791;
+	}
 
-/* Styling Pagination*/
+	.owl-theme .owl-controls .owl-page.active span,
+	.owl-theme .owl-controls.clickable .owl-page:hover span{
+		filter: Alpha(Opacity=100);/*IE7 fix*/
+		opacity: 1;
+	}
 
-.owl-theme .owl-controls .owl-page{
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-}
-.owl-theme .owl-controls .owl-page span{
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin: 5px 7px;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	background: #869791;
-}
+	/* If PaginationNumbers is true */
 
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-}
+	.owl-theme .owl-controls .owl-page span.owl-numbers{
+		height: auto;
+		width: auto;
+		color: #FFF;
+		padding: 2px 10px;
+		font-size: 12px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+	}
 
-/* If PaginationNumbers is true */
-
-.owl-theme .owl-controls .owl-page span.owl-numbers{
-	height: auto;
-	width: auto;
-	color: #FFF;
-	padding: 2px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
-
-/* preloading images */
-.owl-item.loading{
-	min-height: 150px;
-	background: url(../assets/images/AjaxLoader.gif) no-repeat center center
+	/* preloading images */
+	.owl-item.loading{
+		min-height: 150px;
+		background: url(../assets/images/AjaxLoader.gif) no-repeat center center
+	}
 }
