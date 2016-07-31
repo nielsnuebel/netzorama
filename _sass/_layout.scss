@@ -71,10 +71,10 @@ body {
         width: 152px;
         height: 30px;
         @media screen and (min-width: 729px) {
-          width: 152px;
-          height: 30px;
+          width: 212px;
+          height: 42px;
           display: inline-block;
-          padding-top: 11px;
+          padding-top: 5px;
         }
 
         img {
@@ -93,7 +93,7 @@ body {
 
         @media screen and (min-width: 730px) {
           float: right;
-          margin-top: 4px;
+          margin-top: 2px;
         }
 
         @media screen and (max-width: 500px) {
