@@ -4,7 +4,7 @@ html {
 }
 body {
   position: relative;
-  height: 100%;
+  min-height: 100%;
   font-family: 'Brandongm', Arial, sans-serif;
   font-size: 18px;
   color: #000;
@@ -15,6 +15,7 @@ body {
   background: -webkit-radial-gradient(center, ellipse cover,  #fffe81 0%,#fff45d 100%); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center,  #fffe81 0%,#fff45d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffe81', endColorstr='#fff45d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding-bottom: 50px;
 }
 
 #page {
