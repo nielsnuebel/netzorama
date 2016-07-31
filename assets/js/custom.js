@@ -1,14 +1,30 @@
 (function($){
     $(document).ready(function() {
+
+        var owl = $("#owl-demo").owlCarousel({
+
+            navigation : true,
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            autoPlay: false,
+            pagination: false,
+            navigationText : false
+        });
+
         $(".menu-trigger").click(function () {
             $(this).toggleClass("active");
             $("nav,body").toggleClass("active");
-            });
+            setTimeout(
+                function(){
+                    $("#owl-demo").data('owlCarousel').reinit()
+                },
+                1000);
+        });
 
-
-
-        $('#main').click(function () {
-            $("body,.menu-trigger").removeClass("active");
+        $(".text button").click(function () {
+            $(".text_wrapper").stop(true,true).toggleClass("open");
         });
     });
+
 })(this.jQuery);

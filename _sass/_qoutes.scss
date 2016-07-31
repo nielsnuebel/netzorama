@@ -1,0 +1,49 @@
+.quotes {
+  margin: 120px auto 0;
+
+  @media screen and (min-width: 1010px) and (max-width: 1769px) {
+    max-width: 70%;
+    .quotes-wrapper {
+      max-width: 80%;
+    }
+  }
+  @media screen and (min-width: 1770px) {
+    max-width: 75%;
+    .quotes-wrapper {
+      max-width: 90%;
+    }
+  }
+  text-align: center;
+  font-family: 'EamesCMExtraBold';
+
+  .quotes-wrapper {
+    margin: 0 auto;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline;
+        border-bottom: 5px solid black;
+
+        &.font-6 {
+          font-size: 6vw;
+        }
+        &.font-5 {
+          font-size: 5vw;
+        }
+        &.font-45 {
+          font-size: 4.5vw;
+        }
+        &.font-4 {
+          font-size: 4vw;
+        }
+        &.font-3 {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}

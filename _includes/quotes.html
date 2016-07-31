@@ -1,9 +1,9 @@
 <div class="quotes">
     <div class="prev"></div>
     <div class="quotes-wrapper">
-        <ul>
+        <ul id="owl-demo" class="owl-carousel owl-theme">
             {% for item in site.quotes %}
-            <li class="font-{{ item.size }}">{{ item.text }}</li>
+            <li class="item font-{{ item.size }}">{{ item.text }}</li>
             {% endfor %}
         </ul>
     </div>

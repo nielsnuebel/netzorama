@@ -1,0 +1,27 @@
+.text {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+
+  button {
+    background: url(../assets/images/Button.png);
+    width: 192px;
+    height: 53px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:focus {outline:0;}
+  }
+
+  .text_wrapper {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+
+    &.open {
+      display: block;
+    }
+  }
+}
