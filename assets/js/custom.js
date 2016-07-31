@@ -17,7 +17,9 @@
             $("nav,body").toggleClass("active");
             setTimeout(
                 function(){
-                    $("#owl-demo").data('owlCarousel').reinit()
+                    var currentitem = $("#owl-demo").data('owlCarousel').currentItem;
+                    $("#owl-demo").data('owlCarousel').reinit();
+                    $("#owl-demo").data('owlCarousel').jumpTo(currentitem);
                 },
                 1000);
         });
