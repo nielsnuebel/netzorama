@@ -7,8 +7,7 @@
 
 # Site settings
 title: NETZ-O-RAMA
-email: your-email@domain.com
-description: Description
+description:
 baseurl: ""
 url: "http://netz-o-rama.comedycentral.tv"
 googleanalyticss:  UA-XXXXX-1
@@ -69,7 +68,7 @@ quotes:
   size: 45
 
 - text: LÄSSIGER BRO ZEIGT ALLES VON KATZEN BIS KOTZEN.
-  size: 5
+  size: 4
 
 - text: "WEBCLIPS MIT MASUD: HART ABER FAIL."
   size: 5
