@@ -21,6 +21,8 @@ body {
 #page {
   transition: 1s;
   padding-left: 0px;
+  position: relative;
+  overflow: hidden;
 
   header {
     padding-top: 39px;

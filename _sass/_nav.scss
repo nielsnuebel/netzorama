@@ -1,12 +1,17 @@
 nav {
+  position: absolute;
   transition: 1s;
   background: black;
-  position: absolute;
   left:-215px;
   top:0;
   bottom: 0;
   height: 100%;
   width: 215px;
+
+  @media screen and (min-height: 390px) {
+    position: fixed;
+  }
+
 
   ul {
     padding: 0;
