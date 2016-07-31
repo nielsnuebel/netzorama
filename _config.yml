@@ -12,6 +12,7 @@ description: Description
 baseurl: ""
 url: "http://comedy.niels-nuebel.de"
 googleanalyticss:  UA-XXXXX-1
+app_id: 123456789
 
 # Build settings
 markdown: kramdown
