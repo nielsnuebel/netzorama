@@ -430,3 +430,11 @@ th {
 .clearfix {
   clear: both;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}

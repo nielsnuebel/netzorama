@@ -38,7 +38,7 @@ nav:
 - name: News
   link: "http://www.comedycentral.tv/news"
 
-- name: Funny Clips
+- name: '<img src="assets/images/ccfunny.png">'
   link: "http://de.funnyclips.cc/"
 
 - name: TV-Programm
