@@ -9,8 +9,25 @@
             singleItem:true,
             autoPlay: false,
             pagination: false,
-            navigationText : false
+            navigationText : false,
+            afterMove: tweet
         });
+
+        function tweet() {
+            var currentitem = $("#owl-demo").data('owlCarousel').currentItem;
+
+            var tweet = $(".tweet-"+currentitem).html();
+
+            var url = '&url='+encodeURI(window.location.href);
+
+            var text = 'text='+encodeURI(tweet);
+
+            var link = "https://twitter.com/intent/tweet?"+text+url+'&hashtags=MASUDZEIGTSDIR';
+
+            $('a.tweet').attr('href',link);
+        }
+
+        tweet()
 
         $(".menu-trigger").click(function () {
             $(this).toggleClass("active");
