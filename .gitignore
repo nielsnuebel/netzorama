@@ -1,0 +1,8 @@
+/.idea/
+/node_modules/
+/bower_components/
+/assets/
+.bowerrc
+bower.json
+package.json
+gulpfile.js
