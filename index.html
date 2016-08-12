@@ -17,13 +17,14 @@
     <link href='images/cc114-ac10450cd1ef6585e8129b4f13024ee6.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
     <link href='images/cc144-9abd2afc172c5e873afbabc7256f217e.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
     <link href='images/favicon.ico' rel='shortcut icon'>
-
+    <link rel="stylesheet" href="http://comedycentral.tv/assets/kobra-v2-fe5abecb4f6c77ce67598398a333e424.css">
     <meta property="og:site_name" content="NETZ-O-RAMA AB. 28 AUGUST" />
     <meta property="og:title" content="NETZ-O-RAMA AB. 28 AUGUST" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://netz-o-rama.comedycentral.tv/" />
     <meta property="og:image" content="http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png" />
+
 </head>
 
 <body>
@@ -111,9 +112,16 @@
 
 
 </div><!-- #page -->
+
+
 <div id="video" class="video"></div>
 <!-- JavaScript -->
 <script src="js/netzorama.js"></script>
+<script type="text/javascript" src="http://mynickid.com/assets/kobra.v2.js"></script>
+<div class="kobra-contest" data-key="masud"></div>
+<script type="text/javascript" src="http://www.comedycentral.tv/assets/translations/kobra-2d7404b232177414fa9eba7b57366531.js"></script>
+
+
 <!-- Campaign Omniture Tracking -->
 <script src="js/AppMeasurement.js"></script>
 <script src="js/player.js"></script>
@@ -142,13 +150,46 @@
 
     var playObject = {
         "type": "local_playlist",
-        "token": "5fe977b175962202c5d2",
-        "mrss": "http://gakusei-cluster.mtvnn.com/v2/mrss.xml?uri=mgid:sensei:video:mtvnn.com:local_playlist_video-5fe977b175962202c5d2"
+        "token": "34f0ea4743f3f1d24b96",
+       // "mrss": "http://gakusei-cluster.mtvnn.com/v2/mrss.xml?uri=mgid:sensei:video:mtvnn.com:local_playlist_video-34f0ea4743f3f1d24b96"
     };
 
     VIACOM.Mediaplayer.assets = { playerSwfSrc: 'swf/g2player.swf' };
-
     window.playerconfig = {
+        "assetPaths": { "g2player.swf": "/swf/g2player.swf" },
+        "tld": "de",
+        "controls": true,
+        "domain": "comedy",
+        "autoplay": true,
+        "localization": {
+            "language": "de",
+            "country": "DE",
+            "translations": {
+                "countdown": "WERBUNG. Video startet in {seconds} sekunden",
+                "quality": "Qualität",
+                "autorendition": "Auto",
+                "turnoffadblocker": "Bitte schalte Deinen Adblocker aus um das Video sehen zu können",
+                "config_error": "Sorry! Der Player konnte nicht konfiguriert werden! <br />Wir arbeiten momentan daran...",
+                "asset_error": "Sorry! Das Video konnte nicht geladen werden...",
+                "script_error": "Ooops! Hier fehlen ein paar wichtige Skripte...",
+                "asset_not_available_error": "Sorry! Das Video ist auf mobilen Endgeräten nicht verfügbar...",
+                "no_connection_error": "Ooops! Keine Verbindung zum Server...",
+                "content_not_available_error": "Sorry! Diese Inhalte sind aufgrund der rechtlichen Lage nicht verfügbar.",
+                "generic_error": "Ooops! Etwas ist schiefgelaufen... <br />Wir bearbeiten das Problem!<br />Danke für deine Geduld!",
+                "wrong_language": "Sorry! Dieses Video ist in deiner Sprache nicht verfügbar!",
+                "suspended_loading": "Sorry! Der Ladevorgang für dieses Video wurde unterbrochen!<br />Erneuter Versuch in <span class='seconds'>5</span> Sekunden...",
+                "just_seen": "Gerade angeschaut",
+                "related_videos": "Verwandte Videos:",
+                "replay": "Replay"
+            }
+        },
+        "customVideoAttributes": {
+            "controls": true,
+            "webkit-playsinline": true
+        },
+        "debug": true
+    }
+/*    window.playerconfig = {
         "assetPaths": { "g2player.swf": "/swf/g2player.swf" },
         "tld": "de",
 
@@ -211,7 +252,7 @@
         },
         "debug": false
     };
-    
+    */
     window.playerconfig.autoplay = true;
 
     window.playerconfig.image = "/images/Masud.png";
