@@ -1,0 +1,22 @@
+{
+  "name": "netzorama",
+  "version": "0.0.0",
+  "authors": [
+    "Niels Nübel <niels@niels-nuebel.de>"
+  ],
+  "description": "Netz-O-Rama",
+  "license": "MIT",
+  "homepage": "https://github.com/nielsnuebel/netzorama",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "= 1.11.3",
+    "bootstrap": "~3.3.6"
+  }
+}

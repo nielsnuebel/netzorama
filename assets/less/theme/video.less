@@ -1,0 +1,58 @@
+#videos {
+  margin: 50px 0;
+  .video-item {
+    margin-left: 16px;
+    position: relative;
+    display: inline-block;
+    .border_1,.border_2 {
+      position: absolute;
+      background: black;
+      z-index: 98;
+    }
+    .border_1 {
+      top: -7px;
+      bottom: -7px;
+      left: -7px;
+      right: -7px;
+    }
+    .border_2 {
+      top: -2px;
+      bottom: -13px;
+      left: -13px;
+      right: 0px;
+    }
+    .stage {
+      position: relative;
+      background: white;
+      z-index: 99;
+      max-width: 268px;
+      .preview_img {
+
+
+        img {
+          display: inline-block;
+          max-width: 100%;
+        }
+      }
+
+      .text {
+        padding: 15px 10px 25px;
+        h4 {
+          margin: 0;
+          text-transform: uppercase;
+          padding: 0;
+          font-family: Brandongm;
+          letter-spacing: 0.025em;
+          font-size: 17px;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+          font-family: Georgia, Times, "Times New Roman", serif;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

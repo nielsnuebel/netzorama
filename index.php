@@ -82,58 +82,6 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
                 </div>
             <?php endforeach; ?>
 
-
-            <div class="video-item">
-                <div class="border_1"></div>
-                <div class="border_2"></div>
-                <div class="stage">
-                    <div class="preview_img"></div>
-                    <a href="view/2312983712"><img src="images/preview_img.jpg" title="Clip Name" alt="Clip Name"></a>
-                    <div class="text">
-                        <h4>Clip Name</h4>
-                        <p>SUBLINE GOES HERE</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-item">
-                <div class="border_1"></div>
-                <div class="border_2"></div>
-                <div class="stage">
-                    <div class="preview_img"></div>
-                    <img src="images/preview_img.jpg" title="Clip Name" alt="Clip Name">
-                    <div class="text">
-                        <h4>Clip Name</h4>
-                        <p>SUBLINE GOES HERE</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-item">
-                <div class="border_1"></div>
-                <div class="border_2"></div>
-                <div class="stage">
-                    <div class="preview_img"></div>
-                    <img src="images/preview_img.jpg" title="Clip Name" alt="Clip Name">
-                    <div class="text">
-                        <h4>Clip Name</h4>
-                        <p>SUBLINE GOES HERE</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-item">
-                <div class="border_1"></div>
-                <div class="border_2"></div>
-                <div class="stage">
-                    <div class="preview_img"></div>
-                    <img src="images/preview_img.jpg" title="Clip Name" alt="Clip Name">
-                    <div class="text">
-                        <h4>Clip Name</h4>
-                        <p>SUBLINE GOES HERE</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <section id="gewinnspiel">

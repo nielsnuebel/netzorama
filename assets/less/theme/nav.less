@@ -1,0 +1,213 @@
+nav {
+  transition: 1s;
+  background: black;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 2000;
+
+  @media screen and (min-width: 790px){
+    position: absolute;
+    width: 215px;
+    left:-215px;
+    top:0;
+    height: 100%;
+    bottom: 0;
+  }
+
+  @media screen and (min-height: 390px) and  (min-width: 790px){
+    position: fixed;
+  }
+
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @media screen and (min-width: 790px){
+    text-align: right;
+    }
+
+    li {
+      a {
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        border-bottom: 2px solid #333;
+        font-weight: bold;
+        padding: 10px 0 10px 15px;
+        @media screen and (min-width: 790px){
+          padding: 10px 17px 10px 0;
+        }
+
+      }
+    }
+  }
+}
+
+body.active {
+  nav {
+    transition: 1s;
+    @media screen and (max-width: 729px){
+      height: 393px;
+    }
+    @media screen and (min-width: 790px){
+      left: 0;
+    }
+  }
+  #page {
+    transition: 1s;
+    @media screen and (min-width: 790px){
+      padding-left: 215px;
+    }
+  }
+}
+
+.menu-trigger
+{
+  position: relative;
+  top: 21px;
+  padding-right: 52px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  text-align: justify;
+
+  @media screen and (max-width: 789px) {
+    position: absolute;
+    left: 15px;
+    top: 22px;
+  }
+}
+
+.menu-trigger .icon-left
+{
+  position: absolute;
+
+  width: 15px;
+  height: 4px;
+
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  background-color: #fff;
+}
+.menu-trigger .icon-left:before
+{
+  position: absolute;
+  top: -10px;
+
+  width: 15px;
+  height: 4px;
+
+  content: '';
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  background-color: #fff;
+}
+.menu-trigger .icon-left:after
+{
+  position: absolute;
+  top: 10px;
+
+  width: 15px;
+  height: 4px;
+
+  content: '';
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  background-color: #fff;
+}
+.menu-trigger .icon-left:hover
+{
+  cursor: pointer;
+}
+.menu-trigger .icon-right
+{
+  position: absolute;
+  left: 15px;
+
+  width: 15px;
+  height: 4px;
+
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  background-color: #fff;
+}
+.menu-trigger .icon-right:before
+{
+  position: absolute;
+  top: -10px;
+
+  width: 15px;
+  height: 4px;
+
+  content: '';
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  background-color: #fff;
+}
+.menu-trigger .icon-right:after
+{
+  position: absolute;
+  top: 10px;
+
+  width: 15px;
+  height: 4px;
+
+  content: '';
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  background-color: #fff;
+}
+.menu-trigger .icon-right:hover
+{
+  cursor: pointer;
+}
+.menu-trigger.active .icon-left
+{
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  background: transparent;
+}
+.menu-trigger.active .icon-left:before
+{
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+  -ms-transform: rotate(45deg) scaleX(1.4) translate(2px, 2px);
+  transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+}
+.menu-trigger.active .icon-left:after
+{
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+  -ms-transform: rotate(-45deg) scaleX(1.4) translate(2px, -2px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+}
+.menu-trigger.active .icon-right
+{
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  background: transparent;
+}
+.menu-trigger.active .icon-right:before
+{
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+  -ms-transform: rotate(-45deg) scaleX(1.4) translate(-2px, 2px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+}
+.menu-trigger.active .icon-right:after
+{
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+  -ms-transform: rotate(45deg) scaleX(1.4) translate(-2px, -2px);
+  transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}

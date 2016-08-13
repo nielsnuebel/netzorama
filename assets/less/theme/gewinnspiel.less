@@ -1,0 +1,84 @@
+#gewinnspiel {
+  margin: 50px 0 120px;
+  padding: 50px 0 0;
+  color: white;
+  background: black;
+
+  h3 {
+    text-transform: uppercase;
+    font-family: Brandongm;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    margin: 50px 0 -70px;
+  }
+
+  .stage_wrapper {
+    position:relative;
+    bottom: -75px;
+    .stage-inner {
+      position: relative;
+
+      .stageborder_1,.stageborder_2 {
+        position: absolute;
+        background: black;
+        z-index: 98;
+      }
+
+      .stageborder_1 {
+        top: -7px;
+        right: -7px;
+        bottom: -7px;
+        left: -7px;
+      }
+
+      .stageborder_2 {
+        top: 0px;
+        right: 0px;
+        bottom: -13px;
+        left: -13px;
+      }
+
+      .stage {
+        position: relative;
+        background: white;
+        z-index: 99;
+        border: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: block;
+        text-decoration: none;
+        color: black;
+      }
+      .questions
+      {
+        display: table;
+        .row {
+          display: table-row;
+        }
+        .question {
+          width: 50%;
+          text-align: center;
+          vertical-align: middle;
+          font-family: EamesCMExtraBold;
+          text-decoration: underline;
+          font-size: 36px;
+          padding: 30px 40px;
+          display: table-cell;
+
+          &.left {
+            background: #30cfe3;
+          }
+          &.right {
+            background: #eb5e14;
+          }
+        }
+      }
+      .steps {
+        padding: 20px 0 40px;
+      }
+
+    }
+  }
+
+}
