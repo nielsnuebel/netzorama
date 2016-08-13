@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^view/([\w]+)? /view.php?token=$1
+#RewriteRule ^([\w]+)/?([\w]+)? /index.php?rubrik=$1&seite=$2

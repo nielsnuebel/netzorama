@@ -1,66 +1,15 @@
-<!doctype html>
-<html class="no-js" lang="">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NETZ-O-RAMA AB. 28 AUGUST</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="css/netzorama.css">
-    <link rel="canonical" href="http://netz-o-rama.comedycentral.tv/">
-
-    <script src="js/modernizr-2.8.3.min.js"></script>
-
-    <link href='images/cc57-240d2d26a817f965f67990b2c339e6a7.png' rel='apple-touch-icon-precomposed'>
-    <link href='images/cc72-e20e6de441a92d091604164f2e244bbf.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
-    <link href='images/cc114-ac10450cd1ef6585e8129b4f13024ee6.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
-    <link href='images/cc144-9abd2afc172c5e873afbabc7256f217e.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
-    <link href='images/favicon.ico' rel='shortcut icon'>
-    <meta property="og:site_name" content="NETZ-O-RAMA AB. 28 AUGUST" />
-    <meta property="og:title" content="NETZ-O-RAMA AB. 28 AUGUST" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://netz-o-rama.comedycentral.tv/" />
-    <meta property="og:image" content="http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png" />
-
-</head>
-
-<body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-<nav>
-    <ul>
-        <li><a href="http://www.comedycentral.tv/">Home</a></li>
-        <li><a href="http://www.comedycentral.tv/shows/alle">Shows</a></li>
-        <li><a href="http://www.comedycentral.tv/news">News</a></li>
-        <li><a href="http://de.funnyclips.cc/"><img src="images/ccfunny.png"></a></li>
-        <li><a href="http://www.comedycentral.tv/programm">TV-Programm</a></li>
-        <li><a href="http://www.southpark.de/">South Park</a></li>
-        <li><a href="http://www.comedycentral.tv/bestellt">Blog</a></li>
-        <li><a href="http://standup.comedycentral.de/">Stand-Up Comedy</a></li>
-    </ul>
-</nav>
-
+<?php require_once __DIR__ . '/page_elements/config.php'; ?>
+<?php
+// HEAD PARAMS
+$head_title = 'NETZ-O-RAMA AB. 28 AUGUST';
+$head_desc = 'NETZ-O-RAMA AB. 28 AUGUST';
+$head_fb_url = 'http://netz-o-rama.comedycentral.tv/';
+$head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
+?>
+<?php require_once __DIR__ . '/page_elements/head.php'; ?>
+<?php require_once __DIR__ . '/page_elements/nav.php'; ?>
 <div id="page">
-    <header class="site-header">
-        <div class="stripe"></div>
-        <div class="container wrapper">
-            <div class="comedywrapper">
-                <div class="menu-trigger">
-                    <div class="icon-left"></div>
-                    <div class="icon-right"></div>
-                </div>
-                <a class="comedycentral" href="http://www.comedycentral.tv/"><img src="images/comedycentral.png" alt="comedycentral"/></a>
-            </div>
-            <div class="netz-o-rama">
-                <p class="text-right">AB 28. AUGST<br>SONNTAGS 22:00</p>
-                <div class="netz_logo"><img src="images/netz-o-rama.png" alt="NETZ-O-RAMA"/></div>
-            </div>
-            <div class="clearfix"></div>
-        </div><!-- .wrapper -->
-    </header>
+    <?php require_once __DIR__ . '/page_elements/header.php'; ?>
     <div class="singlepage-nav">
         <div class="container">
             <div class="menu-trigger2">Menü</div>
@@ -110,12 +59,36 @@
         <div class="container">
             <h2>NEUE VIDEOS</h2>
 
+            <?php foreach($obj->videos as $video):?>
+                <div class="video-item">
+                    <div class="border_1"></div>
+                    <div class="border_2"></div>
+                    <div class="stage">
+                        <div class="preview_img">
+                            <a href="view/<?php echo $video->id; ?>"><img src="<?php echo $video->preview_image_url; ?>" title="<?php echo $video->name; ?>" alt="<?php echo $video->name; ?>"></a>
+                        </div>
+                        <div class="text">
+                            <h4><?php echo $video->name; ?></h4>
+                            <p><?php
+
+                                $desc = $video->description;
+                                $desc_length = strlen ($desc);
+
+                                $desc = ($desc_length > $max_desc_length) ? substr($desc, 0, $max_desc_length) . $desc_subfix : $desc;
+                                echo $desc; ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+
+
             <div class="video-item">
                 <div class="border_1"></div>
                 <div class="border_2"></div>
                 <div class="stage">
                     <div class="preview_img"></div>
-                    <img src="images/preview_img.jpg" title="Clip Name" alt="Clip Name">
+                    <a href="view/2312983712"><img src="images/preview_img.jpg" title="Clip Name" alt="Clip Name"></a>
                     <div class="text">
                         <h4>Clip Name</h4>
                         <p>SUBLINE GOES HERE</p>
@@ -213,41 +186,11 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="nav">
-                <ul>
-                    <li><a href="http://www.comedycentral.tv/DATENSCHUTZERKL%C3%84RUNG2" target="_blank" class="external">DISCLAIMER</a></li>
-                    <li><a href="http://www.comedycentral.tv/impressum_info" target="_blank" class="external">LEGAL INFOS</a></li>
-                </ul>
-            </div>
-            <div class="viacom"><img src="images/viacom.png" title="viacom" alt="viacom"></div>
-            <div class="clearfix"></div>
-        </div>
-    </footer>
+
+    <?php require_once __DIR__ . '/page_elements/footer.php'; ?>
 </div><!-- #page -->
+<?php require_once __DIR__ . '/page_elements/javascript.php'; ?>
+<?php require_once __DIR__ . '/page_elements/kobra_javascript.php'; ?>
 
-<!-- JavaScript -->
-<script src="js/netzorama.js"></script>
-<!-- Campaign Omniture Tracking -->
-<script src="js/AppMeasurement.js"></script>
-<script>
-   /* s = new AppMeasurement() // Site dependent info: need to be done only once per site(country)
-    s.account = "viacomedyde" // The account should be custom for each omniture suite that we want to track to.
-    s.charSet = "UTF-8"
-    s.currencyCode = ""
-    // Etc..
-
-    // Specific page tracking  (e.g a to sent each page) (you can extend the object params)
-    s.pageName    = "Netz-o-rama"
-    s.pageType    = ""
-    s.server      = ""
-    s.channel     = ""
-    s.referrer    = ""
-    s.hier1       = "site/campaign/netzorama"
-    s.campaign    = "netzorama"
-
-    s.t();*/
-</script>
 </body>
 </html>

@@ -3200,7 +3200,12 @@ header .netz-o-rama p {
 #videos .video-item .stage {
   position: relative;
   z-index: 99;
+  max-width: 268px;
   background: white;
+}
+#videos .video-item .stage .preview_img img {
+  display: inline-block;
+  max-width: 100%;
 }
 #videos .video-item .stage .text {
   padding: 15px 10px 25px;

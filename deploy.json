@@ -1,0 +1,15 @@
+{
+  "errorMail": "error@nn-medienagentur.de",
+  "sendInfoMails": true,
+  "infoMail": "info@nn-medienagentur.de",
+  "infoSubject": "Update NETZ-O-RAMA",
+  "Subject": "comedycentral",
+  "git": {
+    "git_path": "/usr/local/bin/git",
+    "repo": "nielsnuebel/netzorama",
+    "remote": "origin",
+    "branch": "gh-pages",
+    "hookSecret": "comedycentral",
+    "checkHookSecret": true
+  }
+}
