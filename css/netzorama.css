@@ -2740,7 +2740,7 @@ body.active #page {
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
 }
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 789px) {
   .menu-trigger {
     position: absolute;
     top: 22px;
@@ -2953,18 +2953,78 @@ header .netz-o-rama p {
   margin: 0;
 }
 .singlepage-nav {
+  text-align: center;
   background: #107e3c;
 }
+@media screen and (min-width: 790px) {
+  .singlepage-nav {
+    text-align: right;
+  }
+}
+.singlepage-nav .menu-trigger2 {
+  display: none;
+}
+@media screen and (max-width: 489px) {
+  .singlepage-nav .menu-trigger2 {
+    display: block;
+    padding: 6px 0;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .singlepage-nav .menu-trigger2:before {
+    display: inline-block;
+    margin-right: 4px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    content: "\f107";
+
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .singlepage-nav .menu-trigger2.active:before {
+    content: "\f106";
+  }
+}
 .singlepage-nav ul {
-  min-height: 41px;
   padding: 0;
-  padding: 6px 0 0;
   margin: 0;
   list-style: none;
 }
+@media screen and (max-width: 489px) {
+  .singlepage-nav ul {
+    max-height: 0;
+    /* approximate max height */
+    overflow-y: hidden;
+    -webkit-transition: max-height .5s ease-in-out;
+            transition: max-height .5s ease-in-out;
+  }
+}
+@media screen and (min-width: 490px) {
+  .singlepage-nav ul {
+    min-height: 41px;
+    padding: 6px 0 0;
+  }
+}
 .singlepage-nav ul li {
-  display: inline;
-  margin-left: 45px;
+  display: block;
+  margin: 10px 0;
+}
+.singlepage-nav ul li:first-child {
+  margin-left: 0;
+}
+@media screen and (min-width: 490px) {
+  .singlepage-nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 620px) {
+  .singlepage-nav ul li {
+    margin-left: 45px;
+  }
 }
 .singlepage-nav ul li a {
   padding: 0;
@@ -2976,6 +3036,17 @@ header .netz-o-rama p {
   text-transform: uppercase;
   letter-spacing: .1em;
   vertical-align: middle;
+}
+@media screen and (max-width: 489px) {
+  .singlepage-nav ul li a.external {
+    display: block;
+    margin: 10px 0;
+  }
+}
+.singlepage-nav ul li a:hover,
+.singlepage-nav ul li a:focus,
+.singlepage-nav ul li a:active {
+  color: #73dc9d;
 }
 .singlepage-nav ul li a .fa-stack {
   width: 1.5em;
@@ -2989,6 +3060,12 @@ header .netz-o-rama p {
 .singlepage-nav ul li a .fa-inverse {
   font-size: .7em;
   color: #107e3c;
+}
+@media screen and (max-width: 489px) {
+  .singlepage-nav ul.active {
+    max-height: 511px;
+    padding: 6px 0 10px;
+  }
 }
 #slider .owl-controls {
   height: 35px;
@@ -3013,9 +3090,9 @@ header .netz-o-rama p {
 #slider .item .slide_wrapper .text p {
   margin: 0 0 20px;
   font-family: Brandongm;
-  font-size: 60px;
+  font-size: 4vw;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 4.2vw;
   text-transform: uppercase;
   letter-spacing: .04em;
 }

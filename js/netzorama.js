@@ -11841,6 +11841,11 @@ responsive:!0,responsiveRefreshRate:200,responsiveBaseWidth:g,baseClass:"owl-car
                 1000);
         });
 
+        $(".menu-trigger2").click(function () {
+            $(this).toggleClass("active");
+            $(".singlepage-nav ul").toggleClass("active");
+        });
+
         $(".text a").click(function () {
             $(".text_wrapper").stop(true,true).toggleClass("open");
         });
