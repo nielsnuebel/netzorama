@@ -2616,89 +2616,6 @@ h2 {
     min-height: 700px;
   }
 }
-#page header {
-  position: relative;
-}
-@media screen and (min-width: 730px) {
-  #page header {
-    padding-top: 39px;
-  }
-}
-#page header .stripe {
-  position: absolute;
-  top: 81px;
-  z-index: -1;
-  width: 100%;
-  height: 34px;
-  background: #80c419;
-}
-@media screen and (min-width: 730px) {
-  #page header .stripe {
-    top: 48px;
-  }
-}
-#page header .wrapper {
-  position: relative;
-  z-index: 2;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 730px) {
-  #page header .wrapper {
-    padding: 0 15px;
-  }
-  #page header .wrapper .comedywrapper {
-    display: inline;
-  }
-}
-@media screen and (max-width: 729px) {
-  #page header .wrapper .comedywrapper {
-    position: relative;
-    padding: 10px 15px;
-    text-align: center;
-    background: #80c419;
-  }
-}
-#page header .wrapper a.comedycentral {
-  display: inline-block;
-  width: 152px;
-  height: 30px;
-}
-@media screen and (min-width: 729px) {
-  #page header .wrapper a.comedycentral {
-    display: inline-block;
-    width: 212px;
-    height: 42px;
-    padding-top: 5px;
-  }
-}
-#page header .wrapper a.comedycentral img {
-  display: inline-block;
-  max-width: 100%;
-}
-#page .actor img {
-  display: inline-block;
-  max-width: 100%;
-}
-@media screen and (min-width: 200px) and (max-width: 729px) {
-  #page .actor {
-    text-align: center;
-  }
-  #page .actor img {
-    max-height: 400px;
-  }
-}
-@media screen and (min-width: 730px) {
-  #page .actor {
-    position: absolute;
-    top: 123px;
-    right: -161px;
-    z-index: -1;
-  }
-  #page .actor img {
-    max-height: 573px;
-  }
-}
 #video {
   position: relative;
   width: 100%;
@@ -2740,149 +2657,6 @@ h2 {
   background: white;
   border: none;
 }
-.text-right {
-  text-align: right;
-}
-#page {
-  position: relative;
-  padding-left: 0;
-  overflow: hidden;
-  -webkit-transition: 1s;
-          transition: 1s;
-}
-@media screen and (min-width: 730px) {
-  #page {
-    min-height: 700px;
-  }
-}
-#page header {
-  position: relative;
-}
-@media screen and (min-width: 730px) {
-  #page header {
-    padding-top: 39px;
-  }
-}
-#page header .stripe {
-  position: absolute;
-  top: 81px;
-  z-index: -1;
-  width: 100%;
-  height: 34px;
-  background: #80c419;
-}
-@media screen and (min-width: 730px) {
-  #page header .stripe {
-    top: 48px;
-  }
-}
-#page header .wrapper {
-  position: relative;
-  z-index: 2;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 730px) {
-  #page header .wrapper {
-    padding: 0 15px;
-  }
-  #page header .wrapper .comedywrapper {
-    display: inline;
-  }
-}
-@media screen and (max-width: 729px) {
-  #page header .wrapper .comedywrapper {
-    position: relative;
-    padding: 10px 15px;
-    text-align: center;
-    background: #80c419;
-  }
-}
-#page header .wrapper a.comedycentral {
-  display: inline-block;
-  width: 152px;
-  height: 30px;
-}
-@media screen and (min-width: 729px) {
-  #page header .wrapper a.comedycentral {
-    display: inline-block;
-    width: 212px;
-    height: 42px;
-    padding-top: 5px;
-  }
-}
-#page header .wrapper a.comedycentral img {
-  display: inline-block;
-  max-width: 100%;
-}
-#page .actor img {
-  display: inline-block;
-  max-width: 100%;
-}
-@media screen and (min-width: 200px) and (max-width: 729px) {
-  #page .actor {
-    text-align: center;
-  }
-  #page .actor img {
-    max-height: 400px;
-  }
-}
-@media screen and (min-width: 730px) {
-  #page .actor {
-    position: absolute;
-    top: 123px;
-    right: -161px;
-    z-index: -1;
-  }
-  #page .actor img {
-    max-height: 573px;
-  }
-}
-#video {
-  position: relative;
-  width: 100%;
-  height: 529px;
-  background-color: black;
-}
-.netz-o-rama {
-  margin-top: 24px;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .035em;
-}
-.netz-o-rama p.text-right,
-.netz-o-rama .netz_logo {
-  display: inline-block;
-}
-.netz-o-rama p.text-right {
-  margin-top: 10px;
-}
-.netz-o-rama .netz_logo img {
-  margin-top: -10px;
-  margin-left: 4px;
-}
-@media screen and (min-width: 730px) {
-  .netz-o-rama {
-    float: right;
-    margin-top: 2px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .netz-o-rama {
-    padding: 0 15px;
-  }
-  .netz-o-rama img {
-    display: inline-block;
-    max-width: 100%;
-  }
-}
-.netz-o-rama p {
-  padding: 0;
-  margin: 0;
-}
 nav {
   bottom: 0;
   z-index: 2000;
@@ -2892,7 +2666,7 @@ nav {
   -webkit-transition: 1s;
           transition: 1s;
 }
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 790px) {
   nav {
     position: absolute;
     top: 0;
@@ -2902,7 +2676,7 @@ nav {
     height: 100%;
   }
 }
-@media screen and (min-height: 390px) and (min-width: 730px) {
+@media screen and (min-height: 390px) and (min-width: 790px) {
   nav {
     position: fixed;
   }
@@ -2912,7 +2686,7 @@ nav ul {
   margin: 0;
   list-style: none;
 }
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 790px) {
   nav ul {
     text-align: right;
   }
@@ -2926,7 +2700,7 @@ nav ul li a {
   text-transform: uppercase;
   border-bottom: 2px solid #333;
 }
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 790px) {
   nav ul li a {
     padding: 10px 17px 10px 0;
   }
@@ -2940,7 +2714,7 @@ body.active nav {
     height: 393px;
   }
 }
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 790px) {
   body.active nav {
     left: 0;
   }
@@ -2949,14 +2723,14 @@ body.active #page {
   -webkit-transition: 1s;
           transition: 1s;
 }
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 790px) {
   body.active #page {
     padding-left: 215px;
   }
 }
 .menu-trigger {
   position: relative;
-  top: 19px;
+  top: 21px;
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -3065,6 +2839,118 @@ body.active #page {
   -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
       -ms-transform: rotate(45deg) scaleX(1.4) translate(-2px, -2px);
           transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}
+header {
+  position: relative;
+}
+@media screen and (min-width: 790px) {
+  header {
+    padding-top: 39px;
+  }
+}
+header .stripe {
+  position: absolute;
+  top: 75px;
+  z-index: -1;
+  display: none;
+  width: 100%;
+  height: 41px;
+  background: #80c419;
+}
+@media screen and (min-width: 790px) {
+  header .stripe {
+    top: 48px;
+    display: block;
+  }
+}
+@media screen and (max-width: 789px) {
+  header .wrapper {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 790px) {
+  header .wrapper .comedywrapper {
+    display: inline;
+  }
+}
+@media screen and (max-width: 789px) {
+  header .wrapper .comedywrapper {
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    background: #80c419;
+  }
+}
+header .wrapper a.comedycentral {
+  display: inline-block;
+  width: 152px;
+  height: 30px;
+}
+@media screen and (min-width: 789px) {
+  header .wrapper a.comedycentral {
+    display: inline-block;
+    width: 269px;
+    height: 50px;
+    padding-top: 3px;
+  }
+}
+header .wrapper a.comedycentral img {
+  display: inline-block;
+  max-width: 100%;
+}
+header .netz-o-rama {
+  margin-top: 24px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .035em;
+}
+@media screen and (max-width: 789px) {
+  header .netz-o-rama {
+    padding-bottom: 6px;
+    margin-top: 24px;
+    background: #80c419;
+  }
+}
+header .netz-o-rama p.text-right,
+header .netz-o-rama .netz_logo {
+  display: inline-block;
+}
+@media screen and (max-width: 500px) {
+  header .netz-o-rama p.text-right,
+  header .netz-o-rama .netz_logo {
+    padding: 0 25px;
+  }
+}
+header .netz-o-rama p.text-right {
+  margin-top: 13px;
+  margin-right: 4px;
+}
+header .netz-o-rama .netz_logo img {
+  max-width: 100%;
+  margin-top: -36px;
+}
+@media screen and (max-width: 913px) {
+  header .netz-o-rama .netz_logo img {
+    margin-top: -6px;
+  }
+}
+@media screen and (max-width: 913px) {
+  header .netz-o-rama p.text-right {
+    display: none;
+  }
+}
+@media screen and (min-width: 790px) {
+  header .netz-o-rama {
+    float: right;
+    margin-top: 2px;
+  }
+}
+header .netz-o-rama p {
+  padding: 0;
+  margin: 0;
 }
 .singlepage-nav {
   background: #107e3c;
