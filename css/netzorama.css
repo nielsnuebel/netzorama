@@ -3109,8 +3109,29 @@ body.active #page {
   margin: 0;
   background: #107e3c;
 }
-#slider .item img {
+#slider .item .slide_wrapper {
+  position: relative;
+}
+#slider .item .slide_wrapper img {
+  position: relative;
+  z-index: 99;
   width: 100%;
+}
+#slider .item .slide_wrapper .text {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  z-index: 999;
+  color: white;
+}
+#slider .item .slide_wrapper .text p {
+  margin: 0 0 20px;
+  font-family: Brandongm;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 64px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
 }
 #gewinnspiel {
   padding: 50px 0 0;

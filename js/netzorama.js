@@ -11823,7 +11823,7 @@ responsive:!0,responsiveRefreshRate:200,responsiveBaseWidth:g,baseClass:"owl-car
             margin:10,
             navigation: false,
             singleItem:true,
-            autoPlay: true,
+            autoPlay: false,
             pagination: true
         })
 
