@@ -26,7 +26,7 @@
 							<div class="netz_btn">
 								<div class="border_1"></div>
 								<div class="border_2"></div>
-								<div data-nextstep=".step_1" data-stephide=".step_0" class="next_step stage">Los geht's</div>
+								<div data-step="0" data-nextstep=".step_1" data-stephide=".step_0" class="next_step stage">Los geht's</div>
 							</div>
 						</div>
 					</div>
@@ -61,12 +61,11 @@
 							</div>
 						</div>
 						<div class="steps text-center">
-							<p>Hinter welcher Überschrift verbirgt sich ein echter Clip? Tippe drei mal richtig
-								und gewinne mit etwas Glück eines von fünf iPad.</p>
+							<p class="text"></p>
 							<div class="netz_btn">
 								<div class="border_1"></div>
 								<div class="border_2"></div>
-								<div data-nextstep=".step_2" data-stephide=".step_1" class="next_step stage">Weiter</div>
+								<div data-step="1" data-nextstep=".step_2" data-stephide=".step_1" class="next_step stage">Weiter</div>
 							</div>
 							<div class="counter">1/3</div>
 						</div>
@@ -75,7 +74,7 @@
 					<div class="item step_2">
 						<div class="questions">
 							<div class="row">
-								<div class="left question" data-right="false">
+								<div class="left question" data-right="true">
 									<div class="front">
 										<div class="text">
 											Typ landet nach
@@ -101,12 +100,11 @@
 							</div>
 						</div>
 						<div class="steps text-center">
-							<p>Hinter welcher Überschrift verbirgt sich ein echter Clip? Tippe drei mal richtig
-								und gewinne mit etwas Glück eines von fünf iPad.</p>
+							<p class="text"></p>
 							<div class="netz_btn">
 								<div class="border_1"></div>
 								<div class="border_2"></div>
-								<div data-nextstep=".step_3" data-stephide=".step_2" class="next_step stage">Weiter</div>
+								<div data-step="2" data-nextstep=".step_3" data-stephide=".step_2" class="next_step stage">Weiter</div>
 							</div>
 							<div class="counter">2/3</div>
 						</div>
@@ -139,8 +137,7 @@
 							</div>
 						</div>
 						<div class="steps text-center">
-							<p>Hinter welcher Überschrift verbirgt sich ein echter Clip? Tippe drei mal richtig
-								und gewinne mit etwas Glück eines von fünf iPad.</p>
+							<p class="text"></p>
 							<div class="netz_btn">
 								<div class="border_1"></div>
 								<div class="border_2"></div>
