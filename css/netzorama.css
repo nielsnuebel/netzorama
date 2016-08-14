@@ -3361,7 +3361,7 @@ header .netz-o-rama p {
 }
 #video_player .video-item {
   position: relative;
-  display: inline-block;
+  max-width: 640px;
   margin-bottom: 30px;
   margin-left: 16px;
 }
@@ -3386,13 +3386,12 @@ header .netz-o-rama p {
 #video_player .video-item .stage {
   position: relative;
   z-index: 99;
-  max-width: 640px;
   background: white;
 }
 #video_player .video-item .stage .preview_img #video {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 360px;
   background-color: black;
 }
 @media only screen and (max-width: 630px) {

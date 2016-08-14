@@ -91,7 +91,7 @@ gulp.task('html', function(){
 gulp.task('watch', ['connect'], function() {
 	gulp.watch(lessDir + '/**/*.less', ['cssdev']);
 	gulp.watch(jsDir + '/**/*.js', ['mergeScriptsdev']);
-	gulp.watch('index.php', ['html']);
+	gulp.watch('**/*.php', ['html']);
 });
 
 gulp.task('connect', function() {

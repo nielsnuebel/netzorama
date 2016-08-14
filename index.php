@@ -84,43 +84,7 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
             </div>
         </div>
     </section>
-    <section id="gewinnspiel">
-        <div class="container">
-            <h2>GEWINNSPIEL</h2>
-            <h3 class="text-center">Clip oder Niete?</h3>
-
-            <div class="stage_wrapper">
-                <div class="stage-inner">
-                    <div class="stageborder_1"></div>
-                    <div class="stageborder_2"></div>
-                    <div class="stage">
-                        <div class="questions">
-                            <div class="row">
-                                <div class="left question">
-                                    Mann mit
-                                    mächtigem Überbiss erzählt am Telefon von
-                                    „Deez Nuts“
-                                </div>
-                                <div class="right question">
-                                    Alte Frau schiebt
-                                    gigantischen Penis über lila Zebrastreifen
-                                </div>
-                            </div>
-                        </div>
-                        <div class="steps text-center">
-                            <p>Hinter welcher Überschrift verbirgt sich ein echter Clip? Tippe fünf mal richtig
-                            und gewinne mit etwas Glück eines von Zehn iPad Mini.</p>
-                            <div class="netz_btn">
-                                <div class="border_1"></div>
-                                <div class="border_2"></div>
-                                <a href="#ueber_die_show" class="stage">Los geht's</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php require_once __DIR__ . '/page_elements/gewinnspiel.php'; ?>
     <section id="masud">
         <div class="container">
             <h2>
