@@ -15100,10 +15100,7 @@ window.Modernizr = (function( window, document, undefined ) {
         $(".text a").click(function () {
             $(".text_wrapper").stop(true,true).toggleClass("open");
         });
-
-        $('#masud').click(function () {
-            alert(richtige);
-        })
+        
 
         $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {

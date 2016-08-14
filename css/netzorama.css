@@ -3307,6 +3307,11 @@ header .netz-o-rama p {
   text-decoration: underline;
   vertical-align: middle;
 }
+@media screen and (min-width: 1400px) {
+  #gewinnspiel .stage_wrapper .stage-inner .questions .question {
+    font-size: 2vw;
+  }
+}
 @media screen and (min-width: 500px) {
   #gewinnspiel .stage_wrapper .stage-inner .questions .question {
     padding: 30px 40px;
