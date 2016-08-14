@@ -31,7 +31,7 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
                 <div class="slide_wrapper">
                     <img src="images/slide_1.jpg">
                     <div class="text text-right">
-                        <p>WHO THE FUCK<br>IS MASUD?</p>
+                        <p>WHO THE F*#K<br>IS MASUD?</p>
                         <div class="netz_btn">
                             <div class="border_1"></div>
                             <div class="border_2"></div>
@@ -44,7 +44,7 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
                 <div class="slide_wrapper">
                     <img src="images/slide_2.jpg">
                     <div class="text text-right">
-                        <p>"CLIP ODER NIETE?"<br>SPIELEN UND<br>iPAD GEWINNEN!</p>
+                        <p>„CLIP ODER NIETE?“<br>SPIELEN UND<br>iPAD GEWINNEN!</p>
                         <div class="netz_btn">
                             <div class="border_1"></div>
                             <div class="border_2"></div>
