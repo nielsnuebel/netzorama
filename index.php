@@ -48,7 +48,7 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
                         <div class="netz_btn">
                             <div class="border_1"></div>
                             <div class="border_2"></div>
-                            <a href="#gewinnspiel" class="stage">MEHR</a>
+                            <a href="#gewinnspiel" class="stage">MITMACHEN</a>
                         </div>
                     </div>
                 </div>
