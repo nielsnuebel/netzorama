@@ -2425,6 +2425,13 @@ img {
   src: url('../fonts/EamesCenturyModern ExtraBoldItalic.eot');
   src: local('â˜º'), url('../fonts/EamesCenturyModern ExtraBoldItalic.woff') format('woff'), url('../fonts/EamesCenturyModern ExtraBoldItalic.ttf') format('truetype'), url('../fonts/EamesCenturyModern ExtraBoldItalic.svg') format('svg');
 }
+@font-face {
+  font-family: 'BrandongmBLACK';
+  font-style: normal;
+  font-weight: normal;
+
+  src: url('../fonts/brandon_grotesque_black-webfont.woff2') format('woff2'), url('../fonts/brandon_grotesque_black-webfont.woff') format('woff');
+}
 /**
  * Owl Carousel v2.1.6
  * Copyright 2013-2016 David Deutsch
@@ -3155,7 +3162,7 @@ header .netz-o-rama p {
 }
 #slider .item .slide_wrapper .text p {
   margin: 0 0 20px;
-  font-family: Brandongm;
+  font-family: BrandongmBLACK;
   font-size: 4vw;
   font-weight: 700;
   line-height: 4.2vw;
