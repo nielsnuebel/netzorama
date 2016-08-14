@@ -2430,7 +2430,16 @@ img {
   font-style: normal;
   font-weight: normal;
 
-  src: url('../fonts/brandon_grotesque_black-webfont.woff2') format('woff2'), url('../fonts/brandon_grotesque_black-webfont.woff') format('woff');
+  src: url('../fonts//Brandon_Grotesque Black.eot');
+  src: local('☺'), url('../fonts//Brandon_Grotesque Black.woff') format('woff'), url('../fonts//Brandon_Grotesque Black.ttf') format('truetype'), url('../fonts//Brandon_Grotesque Black.svg') format('svg');
+}
+@font-face {
+  font-family: 'EamesCMExtraBookItalic';
+  font-style: normal;
+  font-weight: normal;
+
+  src: url('../fonts/EamesCenturyModern BookItalic Kopie.eot');
+  src: local('☺'), url('../fonts/EamesCenturyModern BookItalic Kopie.woff') format('woff'), url('../fonts/EamesCenturyModern BookItalic Kopie.ttf') format('truetype'), url('../fonts/EamesCenturyModern BookItalic Kopie.svg') format('svg');
 }
 /**
  * Owl Carousel v2.1.6
@@ -2672,10 +2681,8 @@ body {
   text-align: center;
 }
 h2 {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: EamesCMExtraBookItalic;
   font-size: 36px;
-  font-style: italic;
-  font-weight: bolder;
   letter-spacing: .01em;
 }
 #page {
@@ -3164,7 +3171,6 @@ header .netz-o-rama p {
   margin: 0 0 20px;
   font-family: BrandongmBLACK;
   font-size: 4vw;
-  font-weight: 700;
   line-height: 4.2vw;
   letter-spacing: .04em;
 }
