@@ -3284,8 +3284,15 @@ header .netz-o-rama p {
   background: white;
   border: none;
 }
+#gewinnspiel .stage_wrapper .stage-inner .item {
+  display: none;
+}
+#gewinnspiel .stage_wrapper .stage-inner .item.active {
+  display: block;
+}
 #gewinnspiel .stage_wrapper .stage-inner .questions {
   display: table;
+  width: 100%;
 }
 #gewinnspiel .stage_wrapper .stage-inner .questions .row {
   display: table-row;
@@ -3293,21 +3300,56 @@ header .netz-o-rama p {
 #gewinnspiel .stage_wrapper .stage-inner .questions .question {
   display: table-cell;
   width: 50%;
-  padding: 30px 40px;
+  padding: 15px 20px;
   font-family: EamesCMExtraBold;
-  font-size: 36px;
+  font-size: 3.5vw;
   text-align: center;
   text-decoration: underline;
   vertical-align: middle;
 }
+@media screen and (min-width: 500px) {
+  #gewinnspiel .stage_wrapper .stage-inner .questions .question {
+    padding: 30px 40px;
+  }
+}
 #gewinnspiel .stage_wrapper .stage-inner .questions .question.left {
+  position: relative;
   background: #30cfe3;
 }
 #gewinnspiel .stage_wrapper .stage-inner .questions .question.right {
   background: #eb5e14;
 }
+#gewinnspiel .stage_wrapper .stage-inner .questions .question .back {
+  display: none;
+}
+#gewinnspiel .stage_wrapper .stage-inner .questions .question .back img {
+  max-width: 80%;
+}
+#gewinnspiel .stage_wrapper .stage-inner .questions .question.active .front {
+  display: none;
+}
+#gewinnspiel .stage_wrapper .stage-inner .questions .question.active .back {
+  display: block;
+}
+#gewinnspiel .stage_wrapper .stage-inner .step_0 .question {
+  font-size: 15vw;
+  text-decoration: none !important;
+}
 #gewinnspiel .stage_wrapper .stage-inner .steps {
-  padding: 20px 0 40px;
+  position: relative;
+  padding: 10px 15px 20px;
+}
+@media screen and (min-width: 500px) {
+  #gewinnspiel .stage_wrapper .stage-inner .steps {
+    padding: 20px 80px 40px;
+  }
+}
+#gewinnspiel .stage_wrapper .stage-inner .steps .counter {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-family: BrandongmBLACK;
+  font-size: 22px;
 }
 #videos {
   margin: 50px 0;

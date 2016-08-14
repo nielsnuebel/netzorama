@@ -2,11 +2,11 @@
 <script src="/js/netzorama.js"></script>
 <script type="text/javascript">
 	(function($) {
-		$(document).ready(function () {
+		/*$(document).ready(function () {
 			$('.questions .left').click(function(){
 				alert($(this).data('right'));
 			});
-		});
+		});*/
 	})(this.jQuery);
 </script>
 <!-- Campaign Omniture Tracking -->

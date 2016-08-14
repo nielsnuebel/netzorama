@@ -15062,14 +15062,48 @@ window.Modernizr = (function( window, document, undefined ) {
                 1000);
         });
 
+        var richtige = 0;
+
         $(".menu-trigger2").click(function () {
             $(this).toggleClass("active");
             $(".singlepage-nav ul").toggleClass("active");
         });
 
+        $(".questions .question").click(function () {
+            if(! $(this).parent().hasClass('vote'))
+            {
+                //$(".back",this).addClass("active");
+                $(".front",this).slideUp(200);
+                $(".back",this).delay(200).slideDown(200);
+
+
+                if($(this).data('right'))
+                {
+                    richtige++;
+                }
+                $(this).parent().addClass('vote');
+            }
+        });
+
+        $(".steps .next_step").click(function () {
+
+            if($(this).data('nextstep') == '.step_0') {
+                $('.questions .row').removeClass('vote');
+                $('.front,.back').attr('style','');
+                richtige = 0;
+
+            }
+            $($(this).data('nextstep')).show();
+            $($(this).data('stephide')).hide();
+        });
+
         $(".text a").click(function () {
             $(".text_wrapper").stop(true,true).toggleClass("open");
         });
+
+        $('#masud').click(function () {
+            alert(richtige);
+        })
 
         $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {

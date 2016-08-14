@@ -50,9 +50,17 @@
         text-decoration: none;
         color: black;
       }
+      .item {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
       .questions
       {
         display: table;
+        width: 100%;
         .row {
           display: table-row;
         }
@@ -62,20 +70,68 @@
           vertical-align: middle;
           font-family: EamesCMExtraBold;
           text-decoration: underline;
-          font-size: 36px;
-          padding: 30px 40px;
+          font-size: 3.5vw;
           display: table-cell;
-
+          padding: 15px 20px;
+          @media screen and (min-width: 500px) {
+            padding: 30px 40px;
+          }
           &.left {
             background: #30cfe3;
+            position: relative;
           }
           &.right {
             background: #eb5e14;
           }
+
+
+          .front,.back {
+          }
+          .front {
+
+          }
+          .back {
+            display: none;
+
+            img {
+              max-width: 80%;
+            }
+          }
+
+          &.active {
+            .front {
+              display: none;
+            }
+            .back {
+              display: block;
+            }
+          }
         }
+
+      }
+      .step_0 .question {
+        text-decoration: none !important;
+
+        font-size: 15vw;
       }
       .steps {
-        padding: 20px 0 40px;
+        position: relative;
+        padding: 10px 15px 20px;
+
+        @media screen and (min-width: 500px) {
+          padding: 20px 80px 40px;
+        }
+
+        .counter {
+          position: absolute;
+          right: 30px;
+          bottom: 30px;
+          font-family: BrandongmBLACK;
+          font-size: 22px;
+        }
+
+
+
       }
 
     }
