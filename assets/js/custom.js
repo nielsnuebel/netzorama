@@ -12,7 +12,7 @@
         $('#videos .owl-carousel').owlCarousel({
             items:1,
             loop:false,
-            margin:0,
+            margin:4,
             autoWidth:true
         })
 
