@@ -50,7 +50,7 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
 	<section id="videos">
 		<div class="container">
 			<h2>MEHR VIDEOS</h2>
-
+			<div class="owl-carousel owl-theme">
 			<?php foreach($obj->videos as $video):?>
 
 				<?php if(!is_null($play_video) && $video->id == $play_video->id) continue; ?>
@@ -75,6 +75,7 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
 					</div>
 				</div>
 			<?php endforeach; ?>
+			</div>
 		</div>
 	</section>
 

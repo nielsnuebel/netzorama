@@ -2,8 +2,8 @@
   "id": 390,
   "first_video": {
     "id": "5fe977b175962202c5d2",
-    "name": "Ballons!",
-    "franchise": "SpongeBob Schwammkopf",
+    "name": "CLIP NAME",
+    "franchise": "STAFFEL1 / Folge 2",
     "description": "Seht dabei zu, wie SpongeBob mit Ballons zum Leben erweckt wird!",
     "type": "local_playlist_video",
     "mrss": "http://gakusei-cluster.mtvnn.com/v2/mrss.xml?uri=mgid:sensei:video:mtvnn.com:local_playlist_video-5fe977b175962202c5d2",
@@ -14,9 +14,9 @@
   "videos": [
     {
       "id": "5fe977b175962202c5d2",
-      "name": "Ballons!",
-      "franchise": "SpongeBob Schwammkopf",
-      "description": "Seht dabei zu, wie SpongeBob mit Ballons zum Leben erweckt wird!",
+      "name": "CLIP NAME",
+      "franchise": "STAFFEL1 / Folge 2",
+      "description": "Ein britisches Vögelchen mit zwei gebrochenen Flügeln bekommt eine Image-Bereinigung, und Daniel isst Kuchen mit der angesagtesten Dessert-Diva des Internets.",
       "type": "local_playlist_video",
       "mrss": "http://gakusei-cluster.mtvnn.com/v2/mrss.xml?uri=mgid:sensei:video:mtvnn.com:local_playlist_video-5fe977b175962202c5d2",
       "preview_image_url": "http://images.mtvnn.com/d983af07378ab1bed5ed03a0b9c4b2fb0/640x>",
@@ -40,7 +40,7 @@
       "franchise": "SpongeBob Schwammkopf",
       "description": "Seht dabei zu, wie SpongeBob mit Ballons zum Leben erweckt wird!",
       "type": "local_playlist_video",
-      "mrss": "http://gakusei-cluster.mtvnn.com/v2/mrss.xml?uri=mgid:sensei:video:mtvnn.com:local_playlist_video-5fe977b175962202c5d4",
+      "mrss": "http://gakusei-cluster.mtvnn.com/v2/mrss.xml?uri=mgid:sensei:video:mtvnn.com:local_playlist_video-5fe977b175962202c5d2",
       "preview_image_url": "http://images.mtvnn.com/d983af07378ab1bed5ed03a0b9c4b2fb0/640x>",
       "thumbnail_image_url": "http://images.mtvnn.com/d983af07378ab1bed5ed03a0b9c4b2fb0/90x68_",
       "riptide_video_id": "d983af07378ab1bed5ed03a0b9c4b2fb"
@@ -72,7 +72,7 @@
       "franchise": "SpongeBob Schwammkopf",
       "description": "Seht dabei zu, wie SpongeBob mit Ballons zum Leben erweckt wird!",
       "type": "local_playlist_video",
-      "mrss": "http://gakusei-cluster.mtvnn.com/v2/mrss.xml?uri=mgid:sensei:video:mtvnn.com:local_playlist_video-5fe977b175962202c5d4",
+      "mrss": "http://gakusei-cluster.mtvnn.com/v2/mrss.xml?uri=mgid:sensei:video:mtvnn.com:local_playlist_video-5fe977b175962202c5d2",
       "preview_image_url": "http://images.mtvnn.com/d983af07378ab1bed5ed03a0b9c4b2fb0/640x>",
       "thumbnail_image_url": "http://images.mtvnn.com/d983af07378ab1bed5ed03a0b9c4b2fb0/90x68_",
       "riptide_video_id": "d983af07378ab1bed5ed03a0b9c4b2fb"

@@ -1,24 +1,19 @@
 (function($){
     $(document).ready(function() {
-
-        var owl = $("#owl-demo").owlCarousel({
-
-            navigation : true,
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            singleItem:true,
-            autoPlay: false,
-            pagination: false,
-            navigationText : false,
-        });
-
         $('#slider .owl-carousel').owlCarousel({
+            items: 1,
             loop:true,
-            margin:10,
-            navigation: false,
-            singleItem:true,
-            autoPlay: false,
-            pagination: true
+            center:true,
+            nav: false,
+            dots: true,
+            autoPlay: true
+        })
+
+        $('#videos .owl-carousel').owlCarousel({
+            items:1,
+            loop:false,
+            margin:0,
+            autoWidth:true
         })
 
 

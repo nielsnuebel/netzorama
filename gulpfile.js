@@ -26,7 +26,7 @@ var	assetsDir			= 'assets',
 var scripts = [
 	assetsDir	+ '/bower/jquery/dist/jquery.js',
 	assetsDir	+ '/bower/modernizr/modernizr.js',
-	jsDir 		+ '/owl.carousel.min.js',
+	jsDir 		+ '/owl.carousel2.min.js',
 	jsDir 		+ '/custom.js'
 ];
 

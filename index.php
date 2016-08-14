@@ -26,7 +26,7 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
         </div>
     </div>
     <section id="slider">
-        <div class="owl-carousel">
+        <div class="owl-carousel owl-theme">
             <div class="item">
                 <div class="slide_wrapper">
                     <img src="images/slide_1.jpg">
@@ -58,14 +58,14 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
     <section id="videos">
         <div class="container">
             <h2>NEUE VIDEOS</h2>
-
+            <div class="owl-carousel owl-theme">
             <?php foreach($obj->videos as $video):?>
                 <div class="video-item">
                     <div class="border_1"></div>
                     <div class="border_2"></div>
                     <div class="stage">
                         <div class="preview_img">
-                            <a href="view/<?php echo $video->id; ?>"><img src="<?php echo $video->preview_image_url; ?>" title="<?php echo $video->name; ?>" alt="<?php echo $video->name; ?>"></a>
+                            <a href="video/<?php echo $video->id; ?>"><img src="<?php echo $video->preview_image_url; ?>" title="<?php echo $video->name; ?>" alt="<?php echo $video->name; ?>"></a>
                         </div>
                         <div class="text">
                             <h4><?php echo $video->name; ?></h4>
@@ -81,7 +81,7 @@ $head_fb_image = 'http://netz-o-rama.comedycentral.tv/images/netz-o-rama.png';
                     </div>
                 </div>
             <?php endforeach; ?>
-
+            </div>
         </div>
     </section>
     <section id="gewinnspiel">

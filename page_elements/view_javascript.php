@@ -16,7 +16,7 @@
 		"tld": "de",
 		"controls": true,
 		"domain": "comedy",
-		"autoplay": true,
+		"autoplay": false,
 		"localization": {
 			"language": "de",
 			"country": "DE",
@@ -109,7 +109,7 @@
 	 "debug": false
 	 };
 	 */
-	window.playerconfig.autoplay = true;
+	window.playerconfig.autoplay = false;
 
 	window.playerconfig.image = "<?php echo $play_video->preview_image_url;?>";
 
