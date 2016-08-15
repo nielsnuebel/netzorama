@@ -3342,6 +3342,7 @@ header .netz-o-rama p {
 }
 #gewinnspiel .stage_wrapper .stage-inner .steps {
   position: relative;
+  min-height: 80px;
   padding: 10px 15px 20px;
 }
 @media screen and (min-width: 500px) {

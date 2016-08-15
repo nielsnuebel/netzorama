@@ -154,7 +154,7 @@
 							</div>
 						</div>
 						<div class="steps text-center">
-							<p class="text">text</p>
+							<p>text</p>
 							<div class="netz_btn ">
 								<div class="border_1"></div>
 								<div class="border_2"></div>

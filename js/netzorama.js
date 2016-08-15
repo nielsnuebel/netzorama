@@ -15130,6 +15130,8 @@ window.Modernizr = (function( window, document, undefined ) {
                     richtige = 0;
                     step = 0;
                     $('.netz_btn.hide').css('display','none');
+                    $('.item p.text').html('');
+
 
                 }
                 $($(this).data('nextstep')).show();
