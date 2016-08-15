@@ -15140,7 +15140,7 @@ window.Modernizr = (function( window, document, undefined ) {
             else {
                 var parent = $(this).closest('.item');
 
-                $('.steps p.text',parent).html('Bitte wähle eine Überschrift aus.');
+                $('.steps p.text',parent).html('Bitte wähle einen Satz aus.');
             }
 
 

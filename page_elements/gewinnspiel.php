@@ -21,7 +21,7 @@
 							</div>
 						</div>
 						<div class="steps text-center">
-							<p>Hinter welcher Überschrift verbirgt sich ein echter Clip? Tippe drei mal richtig
+							<p>Hinter welchem Satz verbirgt sich ein echter Clip? Tippe drei mal richtig
 								und gewinne mit etwas Glück eines von fünf iPad.</p>
 							<div class="netz_btn">
 								<div class="border_1"></div>
