@@ -9,7 +9,7 @@
 			<a class="comedycentral" href="http://www.comedycentral.tv/"><img src="/images/comedycentral.png" alt="comedycentral"/></a>
 		</div>
 		<div class="netz-o-rama">
-			<p class="text-right">AB 28. AUGST<br>SONNTAGS 22:00</p>
+			<p class="text-right">AB 28. AUGUST<br>SONNTAGS 22:00</p>
 			<div class="netz_logo"><img src="/images/netz-o-rama.png" alt="NETZ-O-RAMA"/></div>
 		</div>
 		<div class="clearfix"></div>
