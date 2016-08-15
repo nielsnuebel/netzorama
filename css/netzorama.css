@@ -3312,7 +3312,7 @@ header .netz-o-rama p {
     font-size: 2vw;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 660px) {
   #gewinnspiel .stage_wrapper .stage-inner .questions .question {
     padding: 30px 40px;
   }
@@ -3545,9 +3545,15 @@ footer .nav ul li a {
   letter-spacing: .035em;
 }
 footer .viacom {
-  position: absolute;
-  right: 15px;
-  bottom: 0;
+  margin-top: 15px;
+}
+@media screen and (min-width: 500px) {
+  footer .viacom {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    margin-top: 0;
+  }
 }
 footer .viacom img {
   max-width: 156px;
