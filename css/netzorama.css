@@ -3356,6 +3356,9 @@ header .netz-o-rama p {
   font-family: BrandongmBLACK;
   font-size: 22px;
 }
+#gewinnspiel .stage_wrapper .stage-inner .steps .hide {
+  display: none;
+}
 #videos {
   margin: 50px 0;
 }

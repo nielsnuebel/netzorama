@@ -35,8 +35,8 @@
         var step = 0;
 
         const wrong = Array (
-            'Ok, jetzt wirds eng für dich.',
-            'Ok, jetzt wirds eng für dich.',
+            'Das war leider falsch.',
+            'Das war leider falsch.',
             'Sorry, aber du hast wieder die Niete gezogen. Vielleicht mal nen Kaffee zum wach werden?',
             'Hmmmmm... Dabei sein ist alles, oder?'
         )
@@ -72,6 +72,20 @@
                     $('.steps p.text',parent).html(wrong[falsch]);
                 }
                 $(this).parent().addClass('vote');
+
+                if(step == 3 ) {
+                    $('.netz_btn.hide').css('display','inline-block');
+
+                    if(richtige == 3) {
+                        $('.netz_btn.hide .form').show();
+                        $('.netz_btn.hide .reset').hide();
+                    }
+                    else {
+                        $('.netz_btn.hide .form').hide();
+                        $('.netz_btn.hide .reset').show();
+                    }
+
+                }
             }
         });
 
@@ -83,6 +97,7 @@
                     $('.front,.back').attr('style','');
                     richtige = 0;
                     step = 0;
+                    $('.netz_btn.hide').css('display','none');
 
                 }
                 $($(this).data('nextstep')).show();

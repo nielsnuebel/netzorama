@@ -138,12 +138,28 @@
 						</div>
 						<div class="steps text-center">
 							<p class="text"></p>
-							<div class="netz_btn">
+							<div class="netz_btn hide">
 								<div class="border_1"></div>
 								<div class="border_2"></div>
-								<div data-nextstep=".step_0" data-stephide=".step_3" class="next_step stage">Weiter</div>
+								<div data-step="3" data-nextstep=".step_4" data-stephide=".step_3" class="next_step stage form">Formular</div>
+								<div data-step="3" data-nextstep=".step_0" data-stephide=".step_3" class="next_step stage reset">Nochmal</div>
 							</div>
 							<div class="counter">3/3</div>
+						</div>
+					</div>
+					<div class="item step_4">
+						<div class="questions">
+							<div class="row">
+								formular
+							</div>
+						</div>
+						<div class="steps text-center">
+							<p class="text">text</p>
+							<div class="netz_btn ">
+								<div class="border_1"></div>
+								<div class="border_2"></div>
+								<div class="stage ">Formular abschicken!</div>
+							</div>
 						</div>
 					</div>
 
