@@ -3395,6 +3395,7 @@ header .netz-o-rama p {
 }
 #videos .video-item .stage .preview_img img {
   display: inline-block;
+  width: 252px;
   max-width: 100%;
 }
 #videos .video-item .stage .text {
