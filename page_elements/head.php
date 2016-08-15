@@ -25,6 +25,10 @@
 	<meta property="og:url" content="<?php echo $head_fb_url;?>" />
 	<meta property="og:image" content="<?php echo $head_fb_image;?>" />
 
+	<script src="/js/netzorama.js"></script>
+	<script type="text/javascript" src="http://mynickid.com/assets/kobra.v2.js"></script>
+	<script type="text/javascript" src="http://www.comedycentral.tv/assets/translations/kobra-2d7404b232177414fa9eba7b57366531.js"></script>
+
 </head>
 
 <body>

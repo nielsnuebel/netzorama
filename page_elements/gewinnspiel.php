@@ -150,7 +150,7 @@
 					<div class="item step_4">
 						<div class="questions">
 							<div class="row">
-								formular
+								<div class="kobra-contest" data-key="masud"></div>
 							</div>
 						</div>
 						<div class="steps text-center">

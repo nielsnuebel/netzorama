@@ -1,5 +1,5 @@
 <!-- JavaScript -->
-<script src="/js/netzorama.js"></script>
+
 <script type="text/javascript">
 	(function($) {
 		/*$(document).ready(function () {
