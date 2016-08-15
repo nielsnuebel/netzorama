@@ -2975,9 +2975,9 @@ header .wrapper a.comedycentral img {
 }
 header .netz-o-rama {
   margin-top: 24px;
-  font-size: 13px;
+  font-size: 22px;
   font-weight: bold;
-  line-height: 15px;
+  line-height: 33px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .035em;
@@ -3000,19 +3000,19 @@ header .netz-o-rama .netz_logo {
   }
 }
 header .netz-o-rama p.text-right {
-  margin-top: 13px;
+  margin-top: 12px;
   margin-right: 4px;
 }
 header .netz-o-rama .netz_logo img {
   max-width: 100%;
-  margin-top: -36px;
+  margin-top: -30px;
 }
-@media screen and (max-width: 913px) {
+@media screen and (max-width: 960px) {
   header .netz-o-rama .netz_logo img {
     margin-top: -6px;
   }
 }
-@media screen and (max-width: 913px) {
+@media screen and (max-width: 960px) {
   header .netz-o-rama p.text-right {
     display: none;
   }
@@ -3557,6 +3557,75 @@ footer .viacom {
 }
 footer .viacom img {
   max-width: 156px;
+}
+.kobra-contest {
+  padding: 20px;
+}
+.kobra-contest form#contest_record_masud fieldset {
+  display: inline;
+  margin-bottom: 10px;
+  border: none;
+}
+.kobra-contest form#contest_record_masud fieldset legend {
+  font-family: EamesCMExtraBookItalic;
+  letter-spacing: .01em;
+}
+.kobra-contest form#contest_record_masud fieldset label {
+  display: block;
+}
+.kobra-contest form#contest_record_masud fieldset input {
+  margin-bottom: 5px;
+  border: 2px solid black;
+}
+.kobra-contest form#contest_record_masud fieldset .kobra-error {
+  font-family: EamesCMExtraBookItalic;
+  font-size: 15px;
+  color: red;
+  text-transform: none;
+  letter-spacing: .01em;
+}
+.kobra-contest form#contest_record_masud fieldset .kobra-error p {
+  display: inline;
+}
+.kobra-contest form#contest_record_masud a {
+  font-size: 16px;
+  color: black;
+}
+.kobra-contest form#contest_record_masud .actions {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  clear: both;
+}
+.kobra-contest form#contest_record_masud .actions:after,
+.kobra-contest form#contest_record_masud .actions:before {
+  position: absolute;
+  z-index: 98;
+  content: '';
+  background: black;
+}
+.kobra-contest form#contest_record_masud .actions:after {
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+}
+.kobra-contest form#contest_record_masud .actions:before {
+  top: 0;
+  right: 0;
+  bottom: -8px;
+  left: -8px;
+}
+.kobra-contest form#contest_record_masud input.btn {
+  position: relative;
+  z-index: 99;
+  display: block;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+  border: none;
 }
 
 /*# sourceMappingURL=netzorama.css.map */

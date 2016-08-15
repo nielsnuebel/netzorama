@@ -153,14 +153,6 @@
 								<div class="kobra-contest" data-key="masud"></div>
 							</div>
 						</div>
-						<div class="steps text-center">
-							<p>text</p>
-							<div class="netz_btn ">
-								<div class="border_1"></div>
-								<div class="border_2"></div>
-								<div class="stage ">Formular abschicken!</div>
-							</div>
-						</div>
 					</div>
 
 				</div>

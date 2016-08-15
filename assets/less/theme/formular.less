@@ -1,0 +1,78 @@
+.kobra-contest {
+  padding: 20px;
+  form#contest_record_masud {
+    fieldset {
+      border: none;
+      margin-bottom: 10px;
+
+      display: inline;
+      legend {
+        font-family: EamesCMExtraBookItalic;
+        letter-spacing: 0.01em;
+      }
+
+
+      label {
+        display: block;
+      }
+
+      input {
+        border: 2px solid black;
+        margin-bottom: 5px;
+      }
+      .kobra-error {
+        color: red;
+        font-family: EamesCMExtraBookItalic;
+        letter-spacing: 0.01em;
+        font-size: 15px;
+        text-transform: none;
+        p {
+          display: inline;
+        }
+      }
+
+
+    }
+    a {
+      color: black;
+      font-size: 16px;
+    }
+    .actions {
+      margin: 0 auto;
+      clear: both;
+      position: relative;
+      display: inline-block;
+
+      &:after,&:before {
+          position: absolute;
+          background: black;
+          z-index: 98;
+         content: '';
+      }
+      &:after {
+        top: -4px;
+        right: -4px;
+        bottom: -4px;
+        left: -4px;
+      }
+
+      &:before {
+        top: 0px;
+        right: 0px;
+        bottom: -8px;
+        left: -8px;
+      }
+    }
+    input.btn {
+      position: relative;
+      background: white;
+      z-index: 99;
+      border: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      display: block;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
